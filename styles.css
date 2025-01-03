@@ -1,0 +1,85 @@
+body {
+    font-family: 'Unbounded', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    background-color: #f6f6ef;
+
+}
+
+.header {
+    background-color: #feaff0;
+    padding: 8px 12px;
+    color: #000;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.header a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.site-title {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.content {
+    padding: 10px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.rank {
+    color: #828282;
+}
+
+.subtext {
+    color: #828282;
+    font-size: 7pt;
+}
+
+.subtext a {
+    color: #828282;
+    text-decoration: none;
+}
+
+.login-icon {
+    color: #000;
+}
+
+.button {
+    padding: 0%;
+    border: none;
+    background: none;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ 
+
+    
+}
+
+.navbar-links:hover {
+    color: aqua;
+   
+}
+
+button img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    vertical-align: middle;
+}
