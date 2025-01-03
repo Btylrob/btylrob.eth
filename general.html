@@ -68,7 +68,24 @@
             background: none;
         }
 
- 
+        .navbar-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+         
+     
+            
+        }
+
+        button img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            vertical-align: middle;
+        }
+
+  
 
 
     </style>
@@ -77,12 +94,24 @@
     <div class="header">
         <div>
             <a href="/" class="site-title">Brandon Robinson</a>
+            
+
+
+            
         </div>
         <div>
+            <ul class="navbar-links" id="navbar-links">
+                <li> <a href="/" class="site-title">| Fun |</a></li>
+                <li> <a href="/" class="site-title"> General |</a></li>
+                <li> <a href="/" class="site-title">Blockchains |</a></li>
+                <li> <a href="/" class="site-title">Philosopy |</a></li>
+                <li> <a href="/" class="site-title">Math |</a></li>
+                <li><button class="button" onclick="toggleMode()">
+                    <img src="favicon.ico" alt="button-icon">
+                </button></li>
 
-            <button class="button" onclick="toggleMode()">
-                <img src="favicon.ico" alt="button-icon">
-            </button>
+            </ul>
+            
 
             <script>
                 let isDarkMode = false; // Tracks the current mode
@@ -125,7 +154,7 @@
             <tr>
                 <td>1.</td>
                 <td>
-                    <a href="projectpus.com">The motor turns too much</a>
+                    <a href="projectpus.com">xxx</a>
                     <span class="subtext">2025 Jan 03</span>
                     <br/>
                     <span class="subtext">| general |</span>
@@ -134,29 +163,29 @@
             <tr>
                 <td>2.</td>
                 <td>
-                    <a href="lynx.boo">Show HN: A minimalist (brutalist?) website for sharing all your links</a>
-                    <span class="subtext">(date)</span>
+                    <a href="lynx.boo">Learning Golang</a>
+                    <span class="subtext">2025 Jan 06</span>
                     <br/>
-                    <span class="subtext"> | philosopy | </span>
+                    <span class="subtext"> | general | </span>
                 </td>
             </tr>
             <tr>
                 <td>3.</td>
                 <td>
-                    <a href="github.com/rbdydotdev">Show HN: Someday, Open-Source Calendly Alternative for Gmail / Google App Script</a>
-                    <span class="subtext">(github.com/rbdydotdev)</span>
+                    <a href="github.com/rbdydotdev">Hopepunk? techno-optimism?</a>
+                    <span class="subtext">2025 Jan 14</span>
                     <br/>
-                    <span class="subtext">74 points by rbdydotdev 3 hours ago | hide | 19 comments</span>
+                    <span class="subtext">| philosopy |</span>
                 </td>
             </tr>
             <!-- Continue with all 30 items following the same pattern -->
             <tr>
-                <td>30.</td>
+                <td>4.</td>
                 <td>
-                    <a href="thecookscook.com">The almost-lost art of rosin potatoes</a>
-                    <span class="subtext">(thecookscook.com)</span>
+                    <a href="thecookscook.com">Miami Maximalism</a>
+                    <span class="subtext">2025 Feb 06</span>
                     <br/>
-                    <span class="subtext">116 points by classichasclass 22 hours ago | hide | 125 comments</span>
+                    <span class="subtext">| philosopy |</span>
                 </td>
             </tr>
         </table>
