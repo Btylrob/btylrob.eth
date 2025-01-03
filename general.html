@@ -1,0 +1,165 @@
+<html>
+<head>
+    <title>Brandon Robinson's website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap">
+    <style>
+        body {
+            font-family: 'Unbounded', sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            margin: 0;
+            background-color: #f6f6ef;
+
+        }
+        
+        .header {
+            background-color: #feaff0;
+            padding: 8px 12px;
+            color: #000;
+            margin: 0;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+        }
+        
+        .header a {
+            color: #000;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        .site-title {
+            font-family: 'Unbounded', sans-serif;
+            font-weight: 200;
+            font-size: 16px;
+        }
+
+        .content {
+            padding: 10px;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+        
+        .rank {
+            color: #828282;
+        }
+        
+        .subtext {
+            color: #828282;
+            font-size: 7pt;
+        }
+        
+        .subtext a {
+            color: #828282;
+            text-decoration: none;
+        }
+
+        .login-icon {
+            color: #000;
+        }
+
+        .button {
+            padding: 0%;
+            border: none;
+            background: none;
+        }
+
+ 
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <a href="/" class="site-title">Brandon Robinson</a>
+        </div>
+        <div>
+
+            <button class="button" onclick="toggleMode()">
+                <img src="favicon.ico" alt="button-icon">
+            </button>
+
+            <script>
+                let isDarkMode = false; // Tracks the current mode
+        
+                function toggleMode() {
+                    if (isDarkMode) {
+                        // Switch to Light Mode
+                        document.body.style.backgroundColor = "white";
+                        document.body.style.color = "black";
+        
+                        // Update links to default color
+                        const links = document.querySelectorAll("a");
+                        links.forEach(link => {
+                            link.style.color = "#000";
+                        });
+                        isDarkMode = false;
+                    } else {
+                        // Switch to Dark Mode
+                        document.body.style.backgroundColor = "#131313";
+                        document.body.style.color = "#FFFFFF";
+        
+                        // Update links to white
+                        const links = document.querySelectorAll("a");
+                        links.forEach(link => {
+                            link.style.color = "#FFFFFF";
+                        });
+                        isDarkMode = true;
+                    }
+                }
+            </script>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="content">
+        <table>
+            <tr>
+                <td>1.</td>
+                <td>
+                    <a href="projectpus.com">The motor turns too much</a>
+                    <span class="subtext">2025 Jan 03</span>
+                    <br/>
+                    <span class="subtext">| general |</span>
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>
+                    <a href="lynx.boo">Show HN: A minimalist (brutalist?) website for sharing all your links</a>
+                    <span class="subtext">(date)</span>
+                    <br/>
+                    <span class="subtext"> | philosopy | </span>
+                </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>
+                    <a href="github.com/rbdydotdev">Show HN: Someday, Open-Source Calendly Alternative for Gmail / Google App Script</a>
+                    <span class="subtext">(github.com/rbdydotdev)</span>
+                    <br/>
+                    <span class="subtext">74 points by rbdydotdev 3 hours ago | hide | 19 comments</span>
+                </td>
+            </tr>
+            <!-- Continue with all 30 items following the same pattern -->
+            <tr>
+                <td>30.</td>
+                <td>
+                    <a href="thecookscook.com">The almost-lost art of rosin potatoes</a>
+                    <span class="subtext">(thecookscook.com)</span>
+                    <br/>
+                    <span class="subtext">116 points by classichasclass 22 hours ago | hide | 125 comments</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
