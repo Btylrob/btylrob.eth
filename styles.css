@@ -38,6 +38,22 @@ body {
     font-weight: bold;
 }
 
+.content1 {
+    padding: 10px;
+    line-height: 1.5;
+    font-weight: bold;
+  
+}
+
+.center {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}  
+
+
+
 .rank {
     color: #828282;
 }
