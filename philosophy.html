@@ -34,37 +34,43 @@
 
             </ul>
             
-
             <script>
-                let isDarkMode = false; // Tracks the current mode
-        
-                function toggleMode() {
+                let isDarkMode = localStorage.getItem("isDarkMode") === "true"; // Retrieve saved mode from localStorage
+            
+                function applyMode() {
                     if (isDarkMode) {
-                        // Switch to Light Mode
-                        document.body.style.backgroundColor = "white";
-                        document.body.style.color = "black";
-        
-                        // Update links to default color
-                        const links = document.querySelectorAll("a");
-                        links.forEach(link => {
-                            link.style.color = "#000";
-                        });
-                        isDarkMode = false;
-                    } else {
-                        // Switch to Dark Mode
+                        // Apply Dark Mode
                         document.body.style.backgroundColor = "#131313";
                         document.body.style.color = "#FFFFFF";
-        
+            
                         // Update links to white
                         const links = document.querySelectorAll("a");
                         links.forEach(link => {
                             link.style.color = "#FFFFFF";
                         });
-                        isDarkMode = true;
+                    } else {
+                        // Apply Light Mode
+                        document.body.style.backgroundColor = "white";
+                        document.body.style.color = "black";
+            
+                        // Update links to default color
+                        const links = document.querySelectorAll("a");
+                        links.forEach(link => {
+                            link.style.color = "#000";
+                        });
                     }
                 }
+            
+                function toggleMode() {
+                    isDarkMode = !isDarkMode; // Toggle the mode
+                    localStorage.setItem("isDarkMode", isDarkMode); // Save the mode in localStorage
+                    applyMode(); // Apply the mode
+                }
+            
+                // Apply the saved mode on page load
+                document.addEventListener("DOMContentLoaded", applyMode);
             </script>
-
+            
 
         </div>
     </div>
